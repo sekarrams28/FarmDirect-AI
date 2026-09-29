@@ -1,0 +1,10 @@
+# DEMO DATA — local reference list of crops used across the app/AI service.
+crop,category,typical_season,unit
+Tomato,Vegetable,summer,kg
+Onion,Vegetable,winter,kg
+Banana,Fruit,year-round,kg
+Turmeric,Spice,monsoon,kg
+Rice,Grain,monsoon,kg
+Sugarcane,Cash Crop,year-round,kg
+Cotton,Cash Crop,summer,kg
+Groundnut,Oilseed,monsoon,kg

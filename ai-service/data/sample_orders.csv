@@ -1,0 +1,25 @@
+date,crop,location,quantity_ordered_kg,price_per_kg,season,supply_kg
+2026-06-01,Tomato,Salem,3800,22,summer,4200
+2026-06-08,Tomato,Salem,4100,23,summer,4300
+2026-06-15,Tomato,Salem,4600,25,summer,4000
+2026-06-22,Tomato,Salem,5200,27,monsoon,3800
+2026-06-29,Tomato,Salem,4900,26,monsoon,4100
+2026-06-01,Tomato,Coimbatore,3200,21,summer,3600
+2026-06-08,Tomato,Coimbatore,3400,21,summer,3700
+2026-06-15,Tomato,Coimbatore,3900,23,summer,3500
+2026-06-22,Tomato,Coimbatore,4300,24,monsoon,3300
+2026-06-29,Tomato,Coimbatore,4000,23,monsoon,3600
+2026-06-01,Onion,Erode,6000,17,summer,7000
+2026-06-08,Onion,Erode,6300,18,summer,6800
+2026-06-15,Onion,Erode,6900,19,summer,6400
+2026-06-22,Onion,Erode,7200,20,monsoon,6100
+2026-06-29,Onion,Erode,6800,19,monsoon,6500
+2026-06-01,Banana,Madurai,5000,12,summer,5300
+2026-06-08,Banana,Madurai,5200,12,summer,5100
+2026-06-15,Banana,Madurai,5400,13,summer,4900
+2026-06-22,Banana,Madurai,5100,12,monsoon,5200
+2026-06-29,Banana,Madurai,4900,11,monsoon,5400
+
+# NOTE: this is a small synthetic dataset for demo/prototyping only.
+# Replace with real historical order + mandi price data before reporting
+# any accuracy numbers (MAE/RMSE) in the SIH pitch, per the project plan.

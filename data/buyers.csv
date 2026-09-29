@@ -1,0 +1,9 @@
+# DEMO DATA — sample buyers with stored lat/long so route/distance features
+# never need an online geocoding service (see offline requirements doc,
+# section 8).
+name,business_name,buyer_type,district,latitude,longitude
+ABC Foods,ABC Foods Pvt Ltd,wholesaler,Salem,11.664,78.146
+GreenMart Retail,GreenMart Retail,retailer,Coimbatore,11.0168,76.9558
+SouthSpice Exports,SouthSpice Exports,exporter,Erode,11.341,77.7172
+Madurai Fresh Mart,Madurai Fresh Mart,retailer,Madurai,9.9252,78.1198
+Trichy AgroTraders,Trichy AgroTraders,wholesaler,Tiruchirappalli,10.7905,78.7047

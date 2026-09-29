@@ -1,0 +1,11 @@
+{
+  "_notice": "DEMO DATA — NOT A LIVE FORECAST. Local stand-in for a live weather API so weather-aware advisory logic can run fully offline (offline requirements doc, section 7).",
+  "lastUpdated": "2026-06-01",
+  "districts": {
+    "Salem": { "condition": "Partly cloudy", "tempC": 31, "humidityPercent": 62, "rainfallMm7d": 12 },
+    "Coimbatore": { "condition": "Clear", "tempC": 29, "humidityPercent": 55, "rainfallMm7d": 4 },
+    "Madurai": { "condition": "Sunny", "tempC": 34, "humidityPercent": 48, "rainfallMm7d": 0 },
+    "Tiruchirappalli": { "condition": "Light rain", "tempC": 28, "humidityPercent": 70, "rainfallMm7d": 28 },
+    "Erode": { "condition": "Partly cloudy", "tempC": 32, "humidityPercent": 58, "rainfallMm7d": 9 }
+  }
+}

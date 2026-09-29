@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF7EE;
+  color: #1E2A1E;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', serif;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #2F6B3C;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 font-semibold text-sm px-5 py-2.5 rounded-xl bg-leaf text-white shadow-soft transition-all duration-200 ease-smooth;
+}
+.btn-primary:hover:not(:disabled) {
+  @apply bg-leafDeep shadow-softHover -translate-y-0.5;
+}
+.btn-primary:active:not(:disabled) {
+  @apply translate-y-0;
+}
+.btn-primary:disabled {
+  @apply opacity-60 cursor-not-allowed shadow-none translate-y-0;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 font-semibold text-sm px-5 py-2.5 rounded-xl bg-white text-leaf border border-leaf/40 shadow-soft transition-all duration-200 ease-smooth;
+}
+.btn-secondary:hover:not(:disabled) {
+  @apply border-leaf bg-leafLight -translate-y-0.5;
+}
+.btn-secondary:disabled {
+  @apply opacity-60 cursor-not-allowed translate-y-0;
+}
+
+/* Legacy alias kept so existing markup using .btn-dark still renders correctly */
+.btn-dark {
+  @apply inline-flex items-center justify-center gap-2 font-semibold text-sm px-5 py-2.5 rounded-xl bg-ink text-paper shadow-soft transition-all duration-200 ease-smooth;
+}
+.btn-dark:hover:not(:disabled) {
+  @apply shadow-softHover -translate-y-0.5;
+}
+.btn-dark:disabled {
+  @apply opacity-60 cursor-not-allowed translate-y-0;
+}
+
+.btn-ai {
+  @apply inline-flex items-center justify-center gap-2 font-semibold text-sm px-5 py-2.5 rounded-xl bg-turmericSoft text-turmericDeep border border-turmeric/50 shadow-soft transition-all duration-200 ease-smooth;
+}
+.btn-ai:hover:not(:disabled) {
+  @apply bg-turmeric/30 -translate-y-0.5;
+}
+.btn-ai:disabled {
+  @apply opacity-60 cursor-not-allowed translate-y-0;
+}
+
+.btn-danger {
+  @apply inline-flex items-center justify-center gap-2 font-semibold text-sm px-4 py-2 rounded-xl bg-dangerSoft text-danger border border-danger/30 transition-all duration-200 ease-smooth;
+}
+.btn-danger:hover:not(:disabled) {
+  @apply bg-danger text-white;
+}
+
+/* ---------- Surfaces ---------- */
+.card {
+  @apply bg-white border border-ink/10 rounded-card p-6 shadow-soft transition-all duration-200 ease-smooth;
+}
+
+.card-hover:hover {
+  @apply shadow-softHover -translate-y-1 border-ink/15;
+}
+
+.ai-card {
+  @apply bg-gradient-to-br from-turmericSoft to-white border border-turmeric/40 rounded-card p-6 shadow-soft;
+}
+
+/* ---------- Forms ---------- */
+.input {
+  @apply w-full px-3.5 py-2.5 rounded-xl border border-ink/15 bg-white text-ink text-sm transition-colors duration-150 placeholder:text-inkSoft/60 focus:outline-none focus:ring-2 focus:ring-leaf/40 focus:border-leaf;
+}
+
+.label {
+  @apply block text-xs font-medium text-inkSoft mb-1.5;
+}
+
+.field-error {
+  @apply text-xs text-danger mt-1;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  @apply inline-flex items-center gap-1 text-[11px] font-medium rounded-full px-2.5 py-1 whitespace-nowrap;
+}
+.badge-success { @apply bg-successSoft text-success; }
+.badge-warning { @apply bg-warningSoft text-warning; }
+.badge-danger { @apply bg-dangerSoft text-danger; }
+.badge-neutral { @apply bg-paperDeep text-inkSoft; }
+.badge-ai { @apply bg-turmericSoft text-turmericDeep border border-turmeric/40; }
+
+/* ---------- Skeleton loading ---------- */
+.skeleton {
+  @apply animate-pulse bg-ink/10 rounded-lg;
+}
+
+/* ---------- Section fade-in ---------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeInUp 0.5s ease-smooth both;
+}
+
+/* ---------- Scroll reveal (used by <Reveal>) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease-smooth, transform 0.6s ease-smooth;
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

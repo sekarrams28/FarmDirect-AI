@@ -1,0 +1,16 @@
+# DEMO / HISTORICAL DATA — NOT A LIVE FEED.
+# Local, offline stand-in for a live market-price API (per the offline
+# requirements doc, sections 5 & 6). Safe to extend with more rows; nothing
+# in this file is fetched from the internet.
+date,crop,market,district,min_price_per_kg,max_price_per_kg,modal_price_per_kg
+2026-06-01,Tomato,Salem Uzhavar Sandhai,Salem,18,26,22
+2026-06-08,Tomato,Salem Uzhavar Sandhai,Salem,19,27,23
+2026-06-15,Tomato,Salem Uzhavar Sandhai,Salem,21,29,25
+2026-06-22,Tomato,Salem Uzhavar Sandhai,Salem,23,31,27
+2026-06-01,Onion,Coimbatore Market,Coimbatore,14,20,17
+2026-06-08,Onion,Coimbatore Market,Coimbatore,15,21,18
+2026-06-15,Onion,Coimbatore Market,Coimbatore,16,22,19
+2026-06-01,Banana,Madurai Market,Madurai,10,16,13
+2026-06-08,Banana,Madurai Market,Madurai,11,17,14
+2026-06-01,Turmeric,Erode Turmeric Market,Erode,55,72,64
+2026-06-08,Turmeric,Erode Turmeric Market,Erode,57,74,66
