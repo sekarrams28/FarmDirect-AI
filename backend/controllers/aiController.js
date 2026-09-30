@@ -47,7 +47,10 @@ const predictPrice = asyncHandler(async (req, res) => {
     }
     payload = {
       crop: produce.crop,
-      location: produce.location.district || produce.location.village,
+      location:
+        produce.location?.district ||
+        produce.location?.village ||
+        'Unknown',
       current_price: produce.askingPrice,
       quantity: produce.quantity,
     };
